@@ -1,0 +1,14 @@
+<!-- app/views/characters/index.html.erb -->
+<h1>Lista de Personajes</h1>
+
+<div class="container mt-4">
+  <div class="list-group">
+    <% @characters.each do |character| %>
+      <div class="list-group-item">
+        <h5 class="mb-1"><strong>Nombre:</strong> <%= character.name %></h5>
+        <p class="mb-1"><strong>Ubicación:</strong> <%= character.location %></p>
+        <p><strong>Casa:</strong> <%= character.house %></p>
+      </div>
+    <% end %>
+  </div>
+</div>
